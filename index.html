@@ -17,6 +17,17 @@
             border: 5px solid darkorange;
         }
 
+        #yorum{
+            resize: none;
+            width: 300px;
+            height: 100px;
+        }
+
+        .hrv{
+            display: inline-block;
+            width: 100px;
+        }
+
     </style>
 
 </head>
@@ -123,9 +134,40 @@
                     <option value="Katmer">Katmer</option>
                     <option value="Kadayıf">Kadayıf</option>
                 </optgroup>
-
-
             </select>
+        </div>
+
+        <div>
+
+            <label for="yorum">Yorum</label>
+            <br>
+            <textarea  name="Girilen_yorum" id="yorum" placeholder="Yorum Lütfen..."></textarea>
+        </div>
+
+        <div>
+            <label for="input-browser">Browsers:</label>
+
+            <input type="text" name="Kullanılan Browser" id="input-browser" list="browsers">
+
+            <datalist id="browsers">
+                <option value="FireFox"></option>
+                <option value="Chrome"></option>
+                <option value="Safari"></option>
+                <option value="Brave"></option>
+            </datalist>
+
+        </div>
+        <br><br><br>
+
+        <div>
+            <fieldset>
+                <legend>Kişisel Bilgiler</legend>
+                <label class="hrv" for="fname">isim</label>
+                <input type="text" name="isim" id="fname">
+                <br>
+                <label class="hrv" for="sname">Soyisim</label>
+                <input type="text" name="soyisim" id="sname">
+            </fieldset>
         </div>
 
 
